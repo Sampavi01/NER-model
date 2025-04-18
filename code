@@ -1,8 +1,7 @@
 import pandas as pd
 import os
 
-dataset_path = os.path.join('data', 'ner_dataset.csv')  # assuming the CSV is placed inside a 'data' folder
-data = pd.read_csv(dataset_path, encoding='unicode_escape')
+data = pd.read_csv('ner_dataset.csv', encoding='unicode_escape')
 
 # Display the first few rows of the dataset
 print(data.head())
